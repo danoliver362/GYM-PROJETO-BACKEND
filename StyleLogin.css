@@ -1,0 +1,80 @@
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    label {
+      font-weight: 700;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    input {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #000428, #004e92);
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #ddd;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 30px;
+    }
+
+    .botoes button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+
+    .botoes button:hover {
+      color: #ff2e63;
+    }
+
+    .acessibilidade {
+      margin-top: 30px;
+      background: #1a1aff;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .acessibilidade:hover {
+      background: #004e92;
+    }
