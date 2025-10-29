@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login do Administrador - GYM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(90deg, #000428, #004e92);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: rgba(255,255,255,0.08);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #facc15;
+      font-weight: 700;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+      color: #d1d5db;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #facc15;
+      color: #111;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #eab308;
+    }
+
+    .voltar {
+      display: block;
+      margin-top: 1rem;
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .voltar:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login do Administrador</h2>
+    <form action="LoginAdm.php" method="POST">
+      <label for="nome">Usuário</label>
+      <input type="text" id="nome" name="nome" required placeholder="Digite o nome de admin">
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required placeholder="Digite a senha">
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <a href="TelaPrincipal.html" class="voltar"><i class="bi bi-arrow-left"></i> Voltar ao site</a>
+  </div>
+</body>
+</html>
